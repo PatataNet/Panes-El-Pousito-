@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Interface</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            position: relative;
+            height: 100%;
+        }
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80%;
+        }
+        .footer-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 20px;
+            background-color: #ddd;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" class="logo" alt="Logo">
+    </header>
+    <div class="container">
+        <div class="carousel">
+            <!-- carousel code here -->
+        </div>
+        <div class="navbar">
+            <!-- navbar code here -->
+        </div>
+    </div>
+    <footer>
+        <p class="footer-text">Small text here</p>
+    </footer>
+</body>
+</html>
