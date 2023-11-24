@@ -48,20 +48,52 @@
         size: 15px;
         color: #1e1e1e;
       }
+      .listaProductos {
+        list-style-type: none;
+      }
+
+      .producto {
+        float: left;
+        background-color: #363636;
+        margin-right: 10px;
+        border: #D7C8B6 2px solid;
+        width: 157px;
+        height: 235.5px;
+      }
+
+      .texto {
+        font-family: 'Dongle', sans-serif;
+        opacity: 0;
+        font-size: 25px;
+        z-index: 10000;
+        color: #FFFFFF;
+        position: relative;
+        top: -83px;
+        left: 5%;
+      }
+
+      .producto:hover > .texto {
+         opacity: 1;
+      }
+      .producto:hover {
+        transform: scale(0.95);
+      }
     </style>
 </head>
 <body>
     <header>
-        <img src="img/calcas panes el pousito.png." class="logo" alt="Logo">
-        <p class="titulo">Panes "El Pousito"</p>
-        <p class="eslogantit">Mas sencilo y mas mejor.</p>
+        <h1><img src="img/logo.png" class="logo" alt="Logo"><p class="titulo">  Panes "El Pousito"  </p><p class="eslogantit">Mas sencilo y mas mejor.</p></h1>
     </header>
     <div class="container">
         <div class="carousel">
-            <img src="img/Brownies.jpg" alt="Brownies $10">
-            <img src="img/Crosantines.jpg" alt="Crosantines $por decidir">
+            <img src="img/Brownies.jpg">
+            <img src="img/Crosantines.jpg">
             <im
         </div>
+      <ul>
+        <li class="producto"><a href=""><img src="img/Brownies.jpg" width="157" height="157"><a class="texto" style="color:#FFFFFF;" id="textoxd">Brownies $10</a></a></li>
+        <li class="producto"><a href=""><img src="img/Crosantines.jpg" width="157" height="157"><a class="texto" style="color:#FFFFFF;" id="textoxd">Crosantines $-</a></a></li>
+      </ul>
         <div class="navbar">
             <!-- navbar code here -->
         </div>
