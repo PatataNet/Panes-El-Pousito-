@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panes "El Pousito"</title>
@@ -38,10 +36,95 @@
       .eslogantit {
         font-size: 15px;
         color: #878787;
+        position: relative;
+        top: -7%;
+        right: 10px;
       }
       .titulo {
         font-size: 20px;
         color: #1e1e1e;
+        position: relative;
+        top: -7%;
+        right: 10px;
+      }
+      .listaProductos {
+        list-style-type: none;
+      }
+
+      .producto {
+        float: left;
+        background-color: #dfdfdf;
+        margin-right: 10px;
+        border: #D7C8B6 2px solid;
+        width: 157px;
+        height: 235.5px;
+      }
+
+      .texto {
+        font-family: 'Dongle', sans-serif;
+        opacity: 0;
+        font-size: 20px;
+        z-index: 10000;
+        color: #19191D;
+        position: relative;
+        top: 11.5%;
+        left: 1.5%;
+      }
+
+      .producto:hover > .texto {
+         opacity: 1;
+      }
+      .producto:hover {
+        transform: scale(0.95);
+      }
+      .Divisor {
+        font-size: 15px;
+        color: #1e1e1e;
+      }
+    
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            position: relative;
+            height: 100%;
+        }
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80%;
+        }
+        .footer-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 20px;
+            background-color: #ddd;
+        }
+      .eslogantit {
+        font-size: 15px;
+        color: #878787;
+        position: relative;
+        top: -6%;
+        right: -10%;
+      }
+      .titulo {
+        font-size: 20px;
+        color: #1e1e1e;
+        position: relative;
+        top: -6%;
+        right: -10%;
       }
       .listaProductos {
         list-style-type: none;
@@ -80,7 +163,7 @@
     </style>
 </head>
 <body>
-  <p><img src="img/PanesElPousitoLogo.gif" width="50" height="50" class="logo" alt="Logo"><p class="titulo">  Panes "El Pousito"  </p><p class="eslogantit">Mas sencilo y mas mejor.</p></p>
+  <p><img src="img/PanesElPousitoLogo.gif" width="65" height="65" class="logo" alt="Logo"></p><p class="titulo">  Panes "El Pousito"  </p><p class="eslogantit">Mas sencilo y mas mejor.</p><p></p>
     <div class="container">
       <br>
       <br>
@@ -88,13 +171,13 @@
       <br>
         <div class="navbar">
           <ul class="listaProductos">
-            <li class="producto"><a href=""><img src="img/Brownies.jpg" width="157" height="157"><a class="texto" style="color:#FFFFFF;" id="textoxd">Brownies $10</a></a></li>
-            <li class="producto"><a href=""><img src="img/Crosantines.jpg" width="157" height="157"><a class="texto" style="color:#FFFFFF;" id="textoxd">Crosantines $-</a></a></li>
+            <li class="producto"><a href=""><img src="img/Brownies.jpg" width="157" height="157"></a><a class="texto" style="color:#FFFFFF;" id="textoxd">Brownies $10</a></li>
+            <li class="producto"><a href=""><img src="img/Crosantines.jpg" width="157" height="157"></a><a class="texto" style="color:#FFFFFF;" id="textoxd">Crosantines $-</a></li>
           </ul>
         </div>
     </div>
     <footer>
         <p class="footer-text">Solo vendidos en la escuela "Escuela de educacion personalizada Yoliztli AC" por dos alumnos de 2°A de secundaria. Consulte nuestros <a href="TerminosYCondiciones">Terminos y Condiciones</a> para mas informacion.</p>
     </footer>
-</body>
-</html>
+
+</body></html>
